@@ -1,7 +1,9 @@
 from animal import animal
 from vehicle import vehicle
 from school import school
-
+from book import book
+from user import user
+from university import university
 
 
 
@@ -50,3 +52,33 @@ balmes.setNClassrooms(200)
 
 carlit.info()
 balmes.info()
+
+#Integrant b Mustapha Bouleili
+elLaberinto = book("El laberinto", "dur", 300, "Marcos", "11-11-2011", 20)
+shadow= book("Shadow", "dur", 878, "Mark", "11-11-2015", 15)
+elLaberinto.info()
+shadow.info()
+
+print("----------------------")
+
+juan = user("Juan", "Garcia", 22, "25342393X", "jgarcia@gmail.com", "673234987")
+alberto = user("Alberto", "Garcia", 27, "25341873Z", "agarcia@gmail.com", "673234467")
+juan.salutacio()
+alberto.salutacio()
+
+print("----------------------")
+
+uab = university("UAB", "Arago, 133", 15, 200, 8, 100)
+upc = university("UPC", "Arago, 180", 14, 150, 6, 80)
+uab.info()
+upc.info()
+
+#canvis
+elLaberinto.setNpage(676)
+shadow.setPrice(33)
+print("----------------------")
+juan.setAage(21)
+alberto.setName("Alfredo")
+print("----------------------")
+uab.setArea(500)
+upc.setNClass(154)
